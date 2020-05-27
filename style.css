@@ -4,18 +4,26 @@
     margin: 0;
     padding: 0;
 }
-
 .header{
     background: tomato;
     height: 40px;
     width: 100%;
     box-shadow: 0px 1px 5px 3px #444;
 }
+@media(max-width: 640px){
+    .header{
+        height: 30px;
+    }
+    .player-one,
+    .player-two{
+        font-size: 20px;
+    }
+}
 .players{
     display: flex;
     font-size: 28px;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: space-evenly;
+    padding: 2px;
 }
 .input-player{    
     background: tomato;
@@ -32,6 +40,31 @@
     -moz-appearance: none;
     appearance: none;
     margin: 0;
+}
+.new-game-btn{
+    background: lightsteelblue;
+    border-radius: 3px;
+    display: none;
+    font-size: 1em;
+    margin-top: -1px;
+    width: 180px;
+}
+@media(max-width: 640px){
+    .new-game-btn{
+        font-size: 18px;
+        padding: 0px;
+        width: 100px;
+    }
+    .new-game{
+        font-size: 20px;
+    }
+}
+.new-game-btn:hover{
+    background: green;
+    color: #fff;
+}
+.new-game-btn:active{
+    background: red;
 }
 .container{
     align-items: center;
@@ -51,12 +84,65 @@
     height: 200px;
     width: 150px;
 }
+@media(max-width: 640px){
+    .card,
+    .card-top{
+        height: 120px;
+        width: 100px;
+    }
+    .img{
+        height: 120px;
+        width: 100px;
+    }
+}
 .card-top{
     background: lightsteelblue;
     cursor: pointer;
 }
 .card{    
     cursor: pointer;
+}
+@media(max-width: 640px){
+    #card-1{
+        margin-left: -170px;
+        margin-top: -40px;
+    }
+    #card-2{
+        margin-left: -250px;
+        margin-top: -40px;
+    }
+    #card-3{
+        margin-left: -330px;
+        margin-top: -40px;
+    }
+    #card-4{
+        margin-left: -410px;
+        margin-top: -40px;
+    }
+    #card-5{
+        margin-left: -490px;
+        margin-top: -40px;
+    }
+    #card-6{
+        margin-left: -170px;
+        margin-top: -140px;
+    }
+    #card-7{
+        margin-left: -250px;
+        margin-top: -140px;
+    }
+    #card-8{
+        margin-left: -330px;
+        margin-top: -140px;
+    }
+    #card-9{
+        margin-left: -410px;
+        margin-top: -140px;
+    }
+    #card-10{
+        margin-left: -490px;
+        margin-top: -140px;
+    }
 }
 #card-1{
     position: absolute;
